@@ -1,6 +1,6 @@
-<img width="468" height="11" alt="image" src="https://github.com/user-attachments/assets/14d86c09-1681-47cf-adfd-21349ee5af95" /># I vibe code this, thank u claude
+# I vibe code this, thank u claude
+**[▶ Play it](https://chinatown-production-a8f4.up.railway.app)**
 
-play it= chinatown-production-a8f4.up.railway.app
 An online version of **Chinatown**, the 1999 negotiation board game by Karsten
 Hartwig. New York Chinatown, 1965–1970. 3–5 players, six rounds, and the whole
 game is people arguing over who gets which building.
