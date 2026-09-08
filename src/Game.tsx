@@ -189,11 +189,13 @@ export function Game({ game, playerId, presence, dispatch }: Props) {
                       </td>
                       <td className="num">{cash(p.money)}</td>
                       <td className="num muted">+${incomeFor(game, p.id)}k/yr</td>
-                      <td className="num muted">
+                      <td className="num muted hide-sm">
                         {businesses.length} biz (
                         {businesses.filter((b) => b.complete).length} done)
                       </td>
-                      <td className="num muted">{tilesOnBoard(game, p.id)}</td>
+                      <td className="num muted hide-sm">
+                        {tilesOnBoard(game, p.id)}
+                      </td>
                     </tr>
                   );
                 })}

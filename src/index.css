@@ -497,6 +497,89 @@ button.chip.pick.on {
   cursor: help;
 }
 
+/* ---------- narrow screens ------------------------------------------- */
+
+@media (max-width: 900px) {
+  main {
+    /* The sidebar is a fixed 430px, which leaves a phone nothing for the
+       board. Stack instead. */
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .boardpane {
+    position: static; /* sticky makes no sense once it is stacked */
+    /* Shrinking 13 columns to 375px makes the lot numbers unreadable, so
+       keep the board legible and let it scroll sideways instead. */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .board {
+    min-width: 460px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    padding: 10px 12px;
+  }
+
+  .topbar .spacer {
+    display: none;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  /* Comfortable thumb targets. */
+  button {
+    padding: 9px 13px;
+  }
+
+  button.tiny {
+    padding: 2px 9px;
+  }
+
+  .chip,
+  button.chip.pick {
+    padding: 6px 11px;
+    font-size: 13px;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .handrow {
+    grid-template-columns: 58px 1fr;
+  }
+
+  /* Stop the four dropdowns in a deal from squeezing each other flat. */
+  .builder select,
+  .builder input {
+    flex: 1 1 44%;
+    min-width: 0;
+    padding: 7px;
+  }
+
+  .builder .grow {
+    flex-basis: 100%;
+  }
+
+  .log {
+    max-height: 170px;
+  }
+
+  .setup {
+    margin: 6vh auto;
+    padding: 0 16px;
+    max-width: 420px;
+  }
+}
+
 /* ---------- setup ---------------------------------------------------- */
 
 .setup {
